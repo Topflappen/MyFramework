@@ -8,12 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		465DF6BB1C7DCD210096294B /* MyFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 465DF6BA1C7DCD210096294B /* MyFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		465DF6C51C7DE72E0096294B /* MyLoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 465DF6C41C7DE72E0096294B /* MyLoginView.xib */; };
+		465DF6C71C7DE7650096294B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 465DF6C61C7DE7650096294B /* Assets.xcassets */; };
+		469353391C7E0A7900A5A852 /* MyLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469353381C7E0A7900A5A852 /* MyLoginView.swift */; };
+		469353731C7F5F2400A5A852 /* UIOLoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 469353721C7F5F2400A5A852 /* UIOLoginView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		465DF6B71C7DCD210096294B /* MyFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MyFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		465DF6BA1C7DCD210096294B /* MyFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyFramework.h; sourceTree = "<group>"; };
 		465DF6BC1C7DCD210096294B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		465DF6C41C7DE72E0096294B /* MyLoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyLoginView.xib; sourceTree = "<group>"; };
+		465DF6C61C7DE7650096294B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		469353381C7E0A7900A5A852 /* MyLoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyLoginView.swift; sourceTree = "<group>"; };
+		469353721C7F5F2400A5A852 /* UIOLoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UIOLoginView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +56,10 @@
 			children = (
 				465DF6BA1C7DCD210096294B /* MyFramework.h */,
 				465DF6BC1C7DCD210096294B /* Info.plist */,
+				465DF6C61C7DE7650096294B /* Assets.xcassets */,
+				465DF6C41C7DE72E0096294B /* MyLoginView.xib */,
+				469353721C7F5F2400A5A852 /* UIOLoginView.xib */,
+				469353381C7E0A7900A5A852 /* MyLoginView.swift */,
 			);
 			path = MyFramework;
 			sourceTree = "<group>";
@@ -120,6 +132,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				465DF6C71C7DE7650096294B /* Assets.xcassets in Resources */,
+				465DF6C51C7DE72E0096294B /* MyLoginView.xib in Resources */,
+				469353731C7F5F2400A5A852 /* UIOLoginView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				469353391C7E0A7900A5A852 /* MyLoginView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,6 +244,7 @@
 		465DF6C01C7DCD210096294B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -238,12 +255,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.my.framework.MyFramework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		465DF6C11C7DCD210096294B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -276,6 +295,7 @@
 				465DF6C11C7DCD210096294B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
